@@ -29,3 +29,14 @@ rosls = ros + ls
 ~~~
 
 ### Building a package
+
+~~~
+$ cd work_dir/src
+$ catkin_create_pkg <package_name> [depends1] [depends2] [depends3]
+$ cd work_dir
+$ catkin_make
+$ . ./devel/setup.bash
+~~~
+
+* Check first level dependencies using `rospack depends1 <package_name>`
+* Recursively check dependencies using `rospack depends <package_name>`
