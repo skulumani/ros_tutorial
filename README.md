@@ -11,11 +11,11 @@ First you should go through the [ROS Tutorial](http://wiki.ros.org/)
 
 * If you installed ROS from a package manager like apt, then those packages will not be write accessible and should not be edited by you the user. When working with ROS packages from source or when creating a new ROS package, you should always work in a directory that you have access to, like your home folder.
 
-* If you're using Anaconda you might need to install 'catkin_pkg'
+* Don't use Anaconda, but instead use the built-in python (and install pip)
 
 ~~~
-$ conda install pip --yes
-$ conda install catkin_pkg --yes
+$ sudo apt-get install python-pip python3-pip
+$ pip3 install --user rospkg catkin_pkg
 ~~~
 
 * Setup the environment variables for the workspace by `$ source devel/setup.bash`
