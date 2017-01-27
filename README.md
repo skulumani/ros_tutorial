@@ -53,7 +53,7 @@ $ cd work_dir/src
 $ catkin_create_pkg <package_name> [depends1] [depends2] [depends3]
 $ cd work_dir
 $ catkin_make
-$ . ./devel/setup.bash
+$ source ./devel/setup.bash
 ~~~
 
 3. [Nodes](http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes)
