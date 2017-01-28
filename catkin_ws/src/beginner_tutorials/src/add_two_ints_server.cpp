@@ -19,5 +19,5 @@ int main(int argc, char **argv)
     ROS_INFO("Ready to add two ints.");
     ros::spin();
 
-    return;    
+    return 0;    
 }
