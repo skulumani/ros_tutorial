@@ -40,14 +40,17 @@ import rospy # needed for all ROS nodes
 from std_msgs.msg import String # lets us use the std_msgs/String type
 
 def talker():
+    # declares that the node is publishing on the chatter topic
+    # with the msg type String
     pub = rospy.Publisher('chatter', String, queue_size=10)
+    # this tells the master the name of our node
     rospy.init_node('talker', anonymous=True)
-    rate = rospy.Rate(10) # 10hz
+    rate = rospy.Rate(10) # 10hz - the sleep method will make sure we're at 10hz
     while not rospy.is_shutdown():
         hello_str = "hello world %s" % rospy.get_time()
         rospy.loginfo(hello_str)
         pub.publish(hello_str)
-        rate.sleep()
+        rate.sleep() # pause just long enough to maintain the desired rate
 
 if __name__ == '__main__':
     try:
