@@ -8,7 +8,7 @@ int main(int argc, char **argv)
     if (argc != 3)
     {
         ROS_INFO("usage: add_two_ints_client X Y");
-        return 1:
+        return 1;
     }
 
     ros::NodeHandle n;
