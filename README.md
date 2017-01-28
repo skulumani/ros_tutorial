@@ -49,7 +49,7 @@ $ catkin_init_workspace
 
 2. Create a catkin package
 ~~~
-$ cd work_dir/src
+$ cd catkin_ws/src
 $ catkin_create_pkg <package_name> [depends1] [depends2] [depends3]
 $ cd work_dir
 $ catkin_make
